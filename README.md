@@ -6,4 +6,20 @@ owner: "Câmara Municipal de Guimarães"         # Entre as aspas escrever o nom
 seal: "Ouro"                          # Entre as aspas escreve Bronze, Prata ou Ouro
 ---
 
+# {{ page.website }}
 
+- Data de criação: {{ page.date }}
+- URL: {{ page.uri }}
+- Propriedade: {{ page.owner }}
+- Candidatura: {{ page.seal }}
+
+## Relatório de Auditoria
+
+Consulte aqui a última atualização: [Relatório do {{ page.website }}](report.html)
+
+<details>
+  <summary>Histórico de atualizações</summary>
+  <ul aria-label="lista de relatórios já efetuados">
+    <li><a href="ddmmaaaa_report.html">(dd/mm/aaaa). Relatório do {{ page.website }}</a></li>
+  </ul>
+</details>
